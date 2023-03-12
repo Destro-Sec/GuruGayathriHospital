@@ -1,5 +1,22 @@
 body {
   background-color: #e6ffc2;
+  overflow-x: hidden;
+}
+
+.first-layer {
+  height: 650px;
+  overflow: hidden;
+}
+.imgs {
+  position: absolute;
+  width: 619.08px;
+  height: 600px;
+  left: 65%;
+  z-index: -1;
+  top: -111px;
+  -webkit-animation: spin 40s linear infinite;
+  -moz-animation: spin 40s linear infinite;
+  animation: spin 40s linear infinite;
 }
 
 .first-layer h1 {
@@ -39,3 +56,270 @@ body {
   left: 25%;
 }
 
+.btnn {
+  position: relative;
+  width: 200px;
+  height: 65px;
+  top: 317px;
+  background: #aacb73;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  left: 42%;
+  transform: translateY(-50%);
+}
+
+.btnn h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  height: 100%;
+}
+
+.sec-layer {
+  background-color: #f3ecb0;
+  position: relative;
+  height: 1500px;
+  overflow: hidden;
+}
+
+.sec-layer .imgss {
+  position: absolute;
+  width: 670px;
+  height: 670px;
+  background: url("./components/images/rotatingDesign.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  left: 75%;
+  -webkit-animation: rspin 40s linear infinite;
+  -moz-animation: rspin 40s linear infinite;
+  animation: rspin 40s linear infinite;
+}
+
+.sec-layer .cont h4 {
+  position: absolute;
+  width: 330px;
+  height: 46px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  top: 30px;
+  left: 20px;
+}
+
+.sec-layer .cont h1 {
+  position: absolute;
+  width: 1095px;
+  height: 134px;
+  left: 65px;
+  top: 100px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.sec-layer .cont p {
+  position: absolute;
+  width: 46%;
+  height: 260px;
+  left: 142px;
+  top: 205px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.cont {
+  position: relative;
+  height: 575px;
+}
+
+.cnt2 {
+  position: relative;
+  width: 100%;
+}
+
+.ltimg {
+  height: 419px;
+  left: 40px;
+  position: absolute;
+}
+
+.cnt2 .rttxt h1 {
+  position: relative;
+  width: 657px;
+  height: 42px;
+  left: 52%;
+  top: 60px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 53px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.cnt2 .rttxt p {
+  position: relative;
+  width: 45%;
+  height: 194px;
+  left: 52%;
+  top: 85px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  height: 200px;
+  top: 210px;
+  position: relative;
+  left: 70px;
+}
+
+.column h1 {
+  position: relative;
+  width: 263px;
+  height: 55px;
+  top: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 53px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.column p {
+  position: relative;
+  width: 293px;
+  height: 100px;
+  top: 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.column h3 {
+  position: relative;
+  width: 180px;
+  height: 42px;
+  top: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  color: #7faf2d;
+}
+
+.column h3::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 8px;
+  border-radius: 19px;
+  bottom: 0;
+  left: 0;
+  background-color: #8fc000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.column h3:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.third-layer {
+  position: relative;
+  top: 77px;
+  left: 15px;
+}
+
+/* Animations section */
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rspin {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rspin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes rspin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
