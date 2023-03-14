@@ -284,8 +284,20 @@ body {
 
 .third-layer {
   position: relative;
-  top: 77px;
-  left: 15px;
+}
+
+.ltt {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.owl-carousel {
+  position: absolute;
+  width: 70%;
+  height: 300px;
+  left: 26%;
+  top: 35px;
 }
 
 /* Animations section */
